@@ -1,0 +1,35 @@
+.heading{
+    background-color: red;
+    display:flex; 
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+
+}
+
+.card{
+    background-color: skyblue;
+   
+
+    
+}
+
+
+
+
+.details{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+   
+}
+
+.employee-card{
+    width: 20%;
+}
