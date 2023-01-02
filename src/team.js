@@ -6,10 +6,12 @@ const renderteam = (team) => {
             <h4><i class="fa-regular fa-people-roof"></i> Manager </h4>
 
         </div>
+        <div class="content">
         <div class = "details">
-            <h5>ID: ${manager.id}</h5>
-            <h5>Email: <a href = "${manager.email}>${manager.officeNumber}</a></h5> 
-            <h5>Office Number: ${manager.officeNumber}</h5>
+            <h4>ID: ${manager.id}</h4>
+            <h4>Email: <a href = "${manager.email}">${manager.email}</a></h4> 
+            <h4>Office Number: ${manager.officeNumber}</h4>
+        </div>
         </div>
         </div>`;
 
@@ -19,26 +21,29 @@ const renderteam = (team) => {
             <h3>${engineer.name}</h3>
             <h4><i class="fa-solid fa-laptop"></i> Engineer</h4>
             </div>
-            
+            <div class="content">
             <div class = "details">
             <h4>ID: ${engineer.id}</h4>
             <h4>Email: <a href = "${engineer.email}">${engineer.email}</a></h4>
             <h4>Github: <a href = "${engineer.github}">${engineer.github}</a></h4>
             </div>
+            </div>
             </div>`;
 
     const renderIntern = (intern) => `
-        <div = "employee-card ">
+        <div class = "employee-card ">
             <div class = "card intern">
             <h3>${intern.name}</h3>
             <h4><i class="fa-solid fa-graduation-cap"></i> Intern</h4>
             </div>
+            <div class="content">
             <div class = "details">
             <h4>ID: ${intern.id}</h4>
             <h4>Email: <a href = "${intern.email}">${intern.email}</a></h4>
             <h4>School: ${intern.school}</h4>
             </div>
-        </div>`;
+            </div>
+            </div>`;
 
     const html = [];
 
@@ -67,13 +72,14 @@ const renderMain = (team) => `
 
 <body>
     <div class = "container">
-        <div class = "header row">
-            <div class = "header-content">
-                <h2 class = "heading">Team</h1>
+            <h2 class = "heading">Team</h2>
+        </div>
+            <div class = "center">
+            <div class = "display"> 
                 ${renderteam(team)}
             </div>
-        </div>
-    </div>
+            </div>
+            
 </body>
 
 <script src="https://kit.fontawesome.com/cba39ebf54.js" crossorigin="anonymous"></script>

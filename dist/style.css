@@ -9,24 +9,38 @@
 
 }
 
+.center{
+
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 
 .card{
     
-    background-color: skyblue;
+    background-color: rgb(23, 23, 163);
     border: 1px solid black;
-    box-shadow: 5px 10px 8px black;
+    color: white;    
     margin-top: 0%;
    
 }
 
 .content{
     padding: 10px;
-    background-color: rgb(199, 196, 196);
+    background-color: rgb(203, 199, 199);
+    
 }
 
 
 .details{
-    border: 1px solid black;
+    border: 1px 1px 0px 1px solid black;
     justify-content: center;
     align-items: left;
     display: flex;
@@ -35,6 +49,15 @@
 }
 
 .employee-card{
-    width: 15%;
+    width: 30%;
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px black;
+    background-color: rgb(203, 199, 199);
     
+  
+    
+}
+
+h4{
+    margin: 15px;
 }
