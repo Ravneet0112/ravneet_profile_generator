@@ -11,8 +11,7 @@ const renderteam = (team) => {
             <h5>Email: <a href = "${manager.email}>${manager.officeNumber}</a></h5> 
             <h5>Office Number: ${manager.officeNumber}</h5>
         </div>
-        </div>
-    `;
+        </div>`;
 
     const renderEngineer = (engineer) => `
         <div class ="employee-card">
@@ -39,7 +38,7 @@ const renderteam = (team) => {
             <h4>Email: <a href = "${intern.email}">${intern.email}</a></h4>
             <h4>School: ${intern.school}</h4>
             </div>
-            </div>`;
+        </div>`;
 
     const html = [];
 
