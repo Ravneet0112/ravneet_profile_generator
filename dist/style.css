@@ -12,7 +12,8 @@
 .row{
     max-width: 1000px;
     margin: auto;
-    padding: 10px;   
+    padding: 10px; 
+    justify-content: center;  
 }
 
 .display {
@@ -24,7 +25,7 @@
 
 .card{
     
-    background-color: rgb(23, 23, 163);
+    background-color: rgb(66, 66, 214);
     border: 1px solid black;
     color: white;    
     margin-top: 0%;
@@ -57,11 +58,17 @@
     
 }
 
-h4{
-    margin: 15px;
+h5, h4, h3{
+    margin: 10px;
 }
 
 h1{
-    color: red;
-    background-color: blue;
+    color: white;
+    
+}
+
+.textcenter{
+    height: 30%;
+    background-color: rgb(249, 84, 84);
+    text-align: center;
 }

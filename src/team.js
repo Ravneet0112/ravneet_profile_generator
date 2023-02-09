@@ -10,9 +10,9 @@ const renderteam = (team) => {
         </div>
         <div class="content">
         <div class = "details">
-            <h4>ID: ${manager.id}</h4>
-            <h4>Email: <a href = "${manager.email}">${manager.email}</a></h4> 
-            <h4>Office Number: ${manager.officeNumber}</h4>
+            <h5>ID: ${manager.id}</h5>
+            <h5>Email: <a href = "${manager.email}">${manager.email}</a></h5> 
+            <h5>Office Number: ${manager.officeNumber}</h5>
         </div>
         </div>
         </div>
@@ -27,9 +27,9 @@ const renderteam = (team) => {
             </div>
             <div class="content">
             <div class = "details">
-            <h4>ID: ${engineer.id}</h4>
-            <h4>Email: <a href = "${engineer.email}">${engineer.email}</a></h4>
-            <h4>Github: <a href = "${engineer.github}">${engineer.github}</a></h4>
+            <h5>ID: ${engineer.id}</h5>
+            <h5>Email: <a href = "${engineer.email}">${engineer.email}</a></h5>
+            <h5>GitHub: <a href = "${engineer.github}">${engineer.github}</a></h5>
             </div>
             </div>
             </div>
@@ -45,9 +45,9 @@ const renderteam = (team) => {
             </div>
             <div class="content">
             <div class = "details">
-            <h4>ID: ${intern.id}</h4>
-            <h4>Email: <a href = "${intern.email}">${intern.email}</a></h4>
-            <h4>School: ${intern.school}</h4>
+            <h5>ID: ${intern.id}</h5>
+            <h5>Email: <a href = "${intern.email}">${intern.email}</a></h5>
+            <h5>School: ${intern.school}</h5>
             </div>
             </div>
             </div>
@@ -80,19 +80,19 @@ const renderMain = (team) => `
 
 
 <body>
-    <div>
+    <div class = "textcenter">
     
-    <h1 class = "text-center">My Team</h1>
+    <h1>My Team</h1>
     </div>
     
-   <container class = "container">
+   
     
     <div class = "row row-cols-1 row-cols-md-3 g-4">
     
     ${renderteam(team)}
    
     </div>  
-    </container>       
+         
 </body>
 
 <script src="https://kit.fontawesome.com/cba39ebf54.js" crossorigin="anonymous"></script>
