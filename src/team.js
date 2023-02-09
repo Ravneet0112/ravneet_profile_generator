@@ -1,6 +1,8 @@
 const renderteam = (team) => {
     const renderManager = (manager) => `
-        <div class= "employee-card">
+        
+    <div class="col">
+    <div class= "employee-card h-100">
         <div class = "card manager">
             <h3>${manager.name}</h3>
             <h4><i class="fa-regular fa-people-roof"></i> Manager </h4>
@@ -13,10 +15,12 @@ const renderteam = (team) => {
             <h4>Office Number: ${manager.officeNumber}</h4>
         </div>
         </div>
+        </div>
         </div>`;
 
     const renderEngineer = (engineer) => `
-        <div class ="employee-card">
+    <div class="col">
+        <div class ="employee-card h-100">
         <div class = "card engineer">
             <h3>${engineer.name}</h3>
             <h4><i class="fa-solid fa-laptop"></i> Engineer</h4>
@@ -28,11 +32,13 @@ const renderteam = (team) => {
             <h4>Github: <a href = "${engineer.github}">${engineer.github}</a></h4>
             </div>
             </div>
+            </div>
             </div>`;
     
 
     const renderIntern = (intern) => `
-        <div class = "employee-card ">
+    <div class="col">
+        <div class = "employee-card h-100">
             <div class = "card intern">
             <h3>${intern.name}</h3>
             <h4><i class="fa-solid fa-graduation-cap"></i> Intern</h4>
@@ -42,6 +48,7 @@ const renderteam = (team) => {
             <h4>ID: ${intern.id}</h4>
             <h4>Email: <a href = "${intern.email}">${intern.email}</a></h4>
             <h4>School: ${intern.school}</h4>
+            </div>
             </div>
             </div>
             </div>`;
@@ -73,15 +80,19 @@ const renderMain = (team) => `
 
 
 <body>
-    <div class = "container">
-            <h2 class = "heading">Team</h2>
-        </div>
-            <div class = "center">
-            <div class = "display"> 
-                ${renderteam(team)}
-            </div>
-            </div>
-            
+    <div>
+    
+    <h1 class = "text-center">My Team</h1>
+    </div>
+    
+   <container class = "container">
+    
+    <div class = "row row-cols-1 row-cols-md-3 g-4">
+    
+    ${renderteam(team)}
+   
+    </div>  
+    </container>       
 </body>
 
 <script src="https://kit.fontawesome.com/cba39ebf54.js" crossorigin="anonymous"></script>

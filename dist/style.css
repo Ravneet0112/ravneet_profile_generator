@@ -9,11 +9,10 @@
 
 }
 
-.center{
-
-    display: flex;
-    justify-content: center;
-    width: 90%;
+.row{
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;   
 }
 
 .display {
@@ -49,7 +48,7 @@
 }
 
 .employee-card{
-    width: 30%;
+    width: 90%;
     border: 1px solid black;
     box-shadow: 5px 10px 8px black;
     background-color: rgb(203, 199, 199);
@@ -60,4 +59,9 @@
 
 h4{
     margin: 15px;
+}
+
+h1{
+    color: red;
+    background-color: blue;
 }
