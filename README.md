@@ -24,7 +24,11 @@ Easy way to generate the team profile for the employees working in your company.
 ## Contribution
 
 For GitHub link, please visit: https://github.com/Ravneet0112/ravneet_profile_generator
+
 For the deployment video: https://drive.google.com/file/d/1yvv0q3UWvzxy1PEb_lTWqajlZB3ZEQCs/view
+
+![htmlpage](https://github.com/Ravneet0112/ravneet_profile_generator/assets/101073782/1e42ec13-3631-4b10-9fb7-983bf3c18aca)
+
 
 ## Instructions
 npm run test
